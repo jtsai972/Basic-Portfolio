@@ -1,7 +1,78 @@
+* {
+    box-sizing: border-box;
+}
 body {
+    background: #ddd url("../images/strange_bullseyes.png") repeat center;
+    background-color: #ddd;
+    color: #777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
     height: auto;
-    overflow: auto;
+    line-height: 1.6em;
     margin: auto;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+    header h1 {
+        background-color: #4aaaa5;
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 1em;
+    }
+    nav {
+        float: right;
+    }
+        nav, nav ul {
+            display: inline-block;
+        }
+        nav ul li {
+            display: inline-block;
+            padding: 1em;
+            list-style: none;
+        }
+        nav a {
+            color: #777;
+            text-decoration: none;
+        }
+
+    .wrap, article {
+        margin: 0 auto;
+        width: 90%;
+            max-width: 960px;
+    }
+
+article {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin: 2em auto;
+    padding: 1em 2em;
+}
+    h2 {
+        border-bottom: 2px solid #ccc;
+        margin-top: 0;
+        padding: 1em 0;
+    }  
+
+footer {
+    background-color: #666;
+    border-top: 4px solid #4aaaa5;
+    color: #ddd;
+    padding-top: 2em;
+    position: fixed;
+        bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+footer p {
+    margin-bottom: 0.5em;
 }
