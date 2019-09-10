@@ -1,3 +1,5 @@
+/* General Page Style */
+
 * {
     box-sizing: border-box;
 }
@@ -17,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
 }
+a {
+    color:#4aaaa5;
+    text-decoration: none;
+}
+article a:hover, article a:visited {
+    color: #a54aaa;
+    text-decoration: underline;
+}
 
 header {
     background-color: #fff;
@@ -34,14 +44,20 @@ header {
     }
         nav, nav ul {
             display: inline-block;
+            margin: 0 auto;
         }
         nav ul li {
             display: inline-block;
-            padding: 1em;
             list-style: none;
         }
         nav a {
             color: #777;
+            display: inline-block;
+            padding: 2em 1.5em;
+        }
+        nav a:hover {
+            background: #4aaaa5;
+            color: white;
             text-decoration: none;
         }
 
@@ -65,7 +81,7 @@ article {
 
 footer {
     background-color: #666;
-    border-top: 4px solid #4aaaa5;
+    border-top: 0.5em solid #4aaaa5;
     color: #ddd;
     padding-top: 2em;
     position: fixed;
@@ -75,4 +91,11 @@ footer {
 }
 footer p {
     margin-bottom: 0.5em;
+}
+
+/* About Page styles */
+.avatar {
+    float: left;
+    margin-right: 1.5em;
+    width: 25%;
 }
