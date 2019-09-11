@@ -71,31 +71,15 @@ article {
     background-color: #fff;
     border: 2px solid #ddd;
     margin: 2em auto;
+        margin-bottom: 8em;
     padding: 1em 2em;
 }
     h2 {
         border-bottom: 2px solid #ccc;
         margin-top: 0;
+        margin-bottom: 1.25em;
         padding: 1em 0;
     }  
-    label, input, textarea {
-        display: block;
-        width: 100%;
-    }
-
-    input[value] {
-        border: 1px solid #777;
-        color: #777;
-    }
-
-    input, textarea {
-        margin-bottom: 1em;
-        padding: 1em;
-    }
-    button {
-        background-color: #4aaaa5;
-        color: white;
-    }
 
 footer {
     background-color: #666;
@@ -116,4 +100,56 @@ footer p {
     float: left;
     margin-right: 1.5em;
     width: 25%;
+}
+
+/* Portfolio Page styles */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+figure {
+    margin: 0;
+        margin-bottom: 1em;
+        margin-right: 3em;
+    position: relative;
+    width: 33%;
+}
+figure img {
+    width: 100%;
+}
+figure figcaption {
+    background: #4aaaa5;
+    color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    position: absolute;
+        bottom: 0.5em;
+    text-align: center;
+    width: 100%;
+}
+
+/* Contact Page styles */
+label, input, textarea {
+    display: block;
+    width: 100%;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+    input[value] {
+        color: #777;
+    }
+    
+textarea {
+    min-height: 16em;
+}
+button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 1em 2em;
 }
