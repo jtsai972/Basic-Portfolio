@@ -31,6 +31,7 @@ article a:hover, article a:visited {
 header {
     background-color: #fff;
     border-bottom: 2px solid #ccc;
+    overflow: auto;
 }
     header h1 {
         background-color: #4aaaa5;
@@ -44,7 +45,7 @@ header {
     }
         nav, nav ul {
             display: inline-block;
-            margin: 0 auto;
+            margin: 0;
         }
         nav ul li {
             display: inline-block;
